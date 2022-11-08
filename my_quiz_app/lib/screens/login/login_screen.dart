@@ -13,14 +13,15 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: const Text('Login',
+        title: const Center(
+          child:  Text('Login',
           style: TextStyle(color: Colors.white,),
           ),
         ),
         backgroundColor: Colors.blue,
       ),
-      body: Column(
+      body: 
+      Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -30,17 +31,17 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Image.asset('assets/images/logo.png'),
             ),
           ),
-          SizedBox(
+        const  SizedBox(
             height: 20,
           ),
-          Text('Welcome',
+        const  Text('Welcome',
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),),
-          SizedBox(
+       const   SizedBox(
             height: 20,
           ),
-           Text('Login',style: TextStyle(
+          const Text('Login',style: TextStyle(
             fontWeight: FontWeight.bold,),),
             Container(
               child: Padding(
@@ -66,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 decoration: InputDecoration(
                                   hintText: 'Password',
                                   labelText: 'Input password',
-                                  prefixIcon: Icon(Icons.password
+                                  prefixIcon: Icon(Icons.lock
                                 ),
                               ),
                               obscureText: true,
@@ -92,6 +93,19 @@ ElevatedButton(
                 fontSize: 10,
                 fontWeight: FontWeight.bold)),
 ),
+// Container( 
+//                   height: 200,
+//                   alignment: Alignment.center,
+//                   padding: EdgeInsets.all(20),
+//                   child: ElevatedButton.icon(
+//                       onPressed: (){
+//                         print("Login");
+//                       }, 
+//                       icon: Icon(Icons.save),  //icon data for elevated button
+//                       label: Text("Elevated Button with Icon"), //label text 
+//                       style: ElevatedButton.styleFrom(
+//                          primary: Colors.blueAccent //elevated btton background color
+//                       ),)),
 SizedBox(
   height: 10,
 ),
